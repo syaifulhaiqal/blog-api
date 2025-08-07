@@ -3,35 +3,35 @@
 @section('title', 'Posts List')
 
 @section('content')
-    <h1 class="mb-4">Posts Management</h1>
+    <h1 class="mb-4">Room Management</h1>
 
     <div class="card mb-4">
         <div class="card-header">
-            <h5>Create New Post</h5>
+            <h5>Add new room</h5>
         </div>
         <div class="card-body">
             <form id="postForm" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
-                    <label for="name" class="form-label">Post Name</label>
+                    <label for="name" class="form-label">Room Name</label>
                     <input type="text" class="form-control" id="name" name="name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="image" class="form-label">Post Image</label>
+                    <label for="image" class="form-label">Room Image</label>
                     <input type="file" class="form-control" id="image" name="image" required>
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label">Description</label>
                     <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Create Post</button>
+                <button type="submit" class="btn btn-primary">Add room</button>
             </form>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">
-            <h5>Posts List</h5>
+            <h5>Room List</h5>
         </div>
         <div class="card-body">
             <div id="postsContainer" class="row">
